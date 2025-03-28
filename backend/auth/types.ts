@@ -1,5 +1,7 @@
+import { ObjectId } from 'mongodb';
+
 export interface User {
-    _id?: string;
+    _id?: ObjectId;
     username: string;
     password: string; // Hashed password
     email: string;
@@ -18,7 +20,15 @@ export interface LoginRequest {
     password: string;
 }
 
+export interface UserResponse {
+    _id: string;
+    username: string;
+    email: string;
+    createdAt: string;
+    updatedAt: string;
+}
+
 export interface AuthResponse {
     token: string;
-    user: Omit<User, 'password'>;
+    user: UserResponse;
 } 
