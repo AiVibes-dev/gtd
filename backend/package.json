@@ -7,9 +7,14 @@
   "type": "module",
   "devDependencies": {
     "@types/node": "^20.5.7",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.5",
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "encore.dev": "^1.46.14"
+    "encore.dev": "^1.46.14",
+    "mongodb": "^6.3.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2"
   }
 }
